@@ -1,5 +1,5 @@
 resource "aws_iam_group" "admin" {
-  name = "admin"
+  name = var.iam_group_name_admin
 }
 
 resource "aws_iam_group_membership" "admin" {
